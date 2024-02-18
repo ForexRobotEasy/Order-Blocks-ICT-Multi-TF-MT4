@@ -1,0 +1,80 @@
+
+// Order Blocks ICT Multi TF MT4
+// Developer: Forex Robot Easy Team
+// Developer's Site: forexroboteasy.com
+
+// Include necessary libraries and dependencies
+#include <iostream>
+#include <vector>
+
+// Define constants and variables
+const double MINIMUM_BLOCK_SIZE = 10.0;
+const int MINIMUM_BLOCK_COUNT = 3;
+
+struct OrderBlock {
+    double low;
+    double high;
+};
+
+// Function to identify order blocks
+std::vector<OrderBlock> identifyOrderBlocks(const std::vector<double>& priceChart) {
+    std::vector<OrderBlock> orderBlocks;
+
+    // Implementation of order block analysis functionality
+    // ...
+
+    return orderBlocks;
+}
+
+// Function to detect support and resistance zones
+std::vector<double> detectSupportResistanceZones(const std::vector<double>& priceChart) {
+    std::vector<double> supportResistanceZones;
+
+    // Implementation of support and resistance zone detection
+    // ...
+
+    return supportResistanceZones;
+}
+
+// Function to determine potential trend reversals or continuations
+bool determineTrendReversals(const std::vector<double>& priceChart) {
+    bool trendReversalDetected = false;
+
+    // Implementation of trend reversal detection
+    // ...
+
+    return trendReversalDetected;
+}
+
+// Function to perform multi-timeframe analysis
+void performMultiTimeframeAnalysis(const std::vector<double>& priceCharts) {
+    // Implementation of multi-timeframe analysis
+    // ...
+
+    std::cout << 'Multi-timeframe analysis completed.' << std::endl;
+}
+
+int main() {
+    // Sample data for testing
+    std::vector<double> priceChart = {1.2345, 1.2367, 1.2356, 1.2312, 1.2345, 1.2378};
+
+    // Step 1: Identify order blocks
+    std::vector<OrderBlock> orderBlocks = identifyOrderBlocks(priceChart);
+
+    // Step 2: Detect support and resistance zones
+    std::vector<double> supportResistanceZones = detectSupportResistanceZones(priceChart);
+
+    // Step 3: Determine potential trend reversals or continuations
+    bool trendReversalDetected = determineTrendReversals(priceChart);
+
+    // Step 4: Perform multi-timeframe analysis
+    std::vector<double> priceCharts = {priceChart, priceChart, priceChart};
+    performMultiTimeframeAnalysis(priceCharts);
+
+    // Output results
+    std::cout << 'Order blocks identified: ' << orderBlocks.size() << std::endl;
+    std::cout << 'Support and resistance zones detected: ' << supportResistanceZones.size() << std::endl;
+    std::cout << 'Trend reversal detected: ' << (trendReversalDetected ? 'Yes' : 'No') << std::endl;
+
+    return 0;
+}
